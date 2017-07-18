@@ -9,4 +9,9 @@ sh 'ant -f build.xml -v'
 }
 }
 }
+post{
+always{
+archive '/var/lib/jenkins/workspace/My Java-project/dist/*.jar'
+}
+}
 }
